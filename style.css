@@ -16,6 +16,52 @@ body {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin-bottom: 20px;
+}
+.subject-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin: 20px 0;
+}
+.subject-list li {
+    margin: 10px 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subject-list li span {
+    flex: 1;
+}
+.math-exercises {
+    margin-top: 20px;
+}
+.math-exercises button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+.math-exercises button:hover {
+    background-color: #f0f0f0;
 }
 .password-container {
     text-align: center;

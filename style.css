@@ -5,10 +5,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: #f2f2f2;
     flex-direction: column;
+    min-height: 100vh; /* Ensure body can grow with content */
 }
+
 .content {
     display: none;
     text-align: center;
@@ -18,23 +19,29 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 500px;
+    max-height: 90vh; /* Prevent content from overflowing viewport */
+    overflow-y: auto; /* Enable scrolling for long content */
 }
+
 h1 {
     font-size: 24px;
     margin-bottom: 10px;
 }
+
 hr {
     border: 0;
     height: 1px;
     background: #ddd;
     margin-bottom: 20px;
 }
+
 .subject-list {
     list-style-type: none;
     padding: 0;
     text-align: left;
     margin: 20px 0;
 }
+
 .subject-list li {
     margin: 10px 0;
     font-size: 16px;
@@ -42,12 +49,15 @@ hr {
     justify-content: space-between;
     align-items: center;
 }
+
 .subject-list li span {
     flex: 1;
 }
+
 .math-exercises {
     margin-top: 20px;
 }
+
 .math-exercises button {
     display: block;
     width: 100%;
@@ -60,16 +70,20 @@ hr {
     text-align: center;
     font-size: 16px;
 }
+
 .math-exercises button:hover {
     background-color: #f0f0f0;
 }
+
 .password-container {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh; /* Center the password container */
 }
+
 .password-container input {
     padding: 10px;
     margin: 10px;
@@ -77,6 +91,7 @@ hr {
     border-radius: 5px;
     width: 200px;
 }
+
 .password-container button {
     padding: 10px 20px;
     background-color: #4CAF50;
@@ -85,9 +100,11 @@ hr {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .password-container button:hover {
     background-color: #45a049;
 }
+
 .error {
     color: red;
     font-weight: bold;

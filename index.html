@@ -3,10 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bca notes portal</title>
+    <title>Password Protected Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>bca notes hub</h1>
-    
+    <!-- Password Protection Content -->
+    <div class="password-container" id="password-container">
+        <h2>Please enter the password to access the page</h2>
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="checkPassword()">Submit</button>
+        <p class="error" id="error-message" style="display: none;">Incorrect password. Please try again.</p>
+    </div>
+
+    <!-- Hidden Protected Content -->
+    <div class="content" id="protected-content">
+        <h1>All Subject PDFs for BCA</h1>
+        <p><b>Author: Sharwan Jung Kunwar</b></p>
+        <p>Discover an all-in-one educational resource with "All Subject PDF." This collection covers a variety of subjects, offering invaluable tools for students, educators, and lifelong learners.</p>
+
+        <h2>Subjects</h2>
+        <ul>
+            <li><b>Digital Logic:</b> <a href="https://drive.google.com/file/d/1m1o88wO3IqNVcpjYbGxxt_1yu6y2cK0U/view?usp=sharing">Explore the fundamentals of digital circuits</a>.</li>
+            <li><b>Sociology:</b> <a href="https://drive.google.com/file/d/1OVZT4gZWXkYiZYMX78hojZCLgJ3uqs6Z/view?usp=drive_link">Understand human society and culture</a>.</li>
+            <li><b>English:</b> <a href="https://drive.google.com/file/d/1tj5_hiVN_lYXkN0BHf3_wHRV6VTm8usf/view?usp=drive_link">Enhance your language skills</a>.</li>
+            <li><b>Computer Fundamentals and Applications:</b> <a href="https://drive.google.com/file/d/16CtZo1TgM3859-5apPVtcPg4NAJ6Bx90/view?usp=drive_link">Learn the basics of computing</a>.</li>
+        </ul>
+
+        <h3>Mathematics Exercises</h3>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/12gtDwtZkY7xqkhASt8mR8g9-xCdnKTeh/view?usp=drive_link">Exercise 1A</a></li>
+            <li><a href="https://drive.google.com/file/d/1pZLtE09c5ZQMRLM7DNBShXasoPeEFskx/view?usp=drive_link">Exercise 1B</a></li>
+            <li><a href="https://drive.google.com/file/d/1s_126xAqAV6xd4huYzCvkUX2zD3tLls1/view?usp=drive_link">Exercise 1C</a></li>
+            <li><a href="https://drive.google.com/file/d/1dk-s9KABjpK9EfJdNA6XPzaIeEqqFOUU/view?usp=drive_link">Exercise 2A</a></li>
+            <li><a href="https://drive.google.com/file/d/134t88dp--ngz6u3ccr76GnP_gbVi1XcY/view?usp=drive_link">Exercise 2B</a></li>
+            <li><a href="https://drive.google.com/file/d/1xacGHOiG8bK2bCfQaeqrgemhJa51xzRi/view?usp=drive_link">Exercise 2C</a></li>
+            <li><a href="https://drive.google.com/file/d/1U30GwnuWCbXzpzi65KMDP9ad9riKM-W7/view?usp=drive_link">Exercise 3A</a></li>
+            <li><a href="https://drive.google.com/file/d/1dc7d0fsmThipAapJ5t5BTKSYXmn8rWcU/view?usp=drive_link">Exercise 3B</a></li>
+            <li><a href="https://drive.google.com/file/d/12s1OOGXWE_p74f0jBZvlrjSqDHIN0TMO/view?usp=drive_link">Exercise 3C</a></li>
+            <li><a href="https://drive.google.com/file/d/1pXLvgmFSZlCC4YnwpAS74wV5V-pmjj9N/view?usp=drive_link">Exercise 3D</a></li>
+            <li><a href="https://drive.google.com/file/d/1Mt1okKNdYkzhbIOrm0BPpUQReFdfA3oq/view?usp=drive_link">Exercise 4A</a></li>
+            <li><a href="https://drive.google.com/file/d/1eeQlTudRyosIYfTlVWQ-0oubFaCu46fw/view?usp=drive_link">Exercise 4B</a></li>
+            <li><a href="https://drive.google.com/file/d/1OTaJph9Xq4Gcy3nLiXl_TkN1X7bxZOpa/view?usp=drive_link">Exercise 4C</a></li>
+            <li><a href="https://drive.google.com/file/d/1uuR7cX1Z_yH1DG-vJABjWRUJlSTbNbeS/view?usp=drive_link">Exercise 4D</a></li>
+            <li><a href="https://drive.google.com/file/d/1oEAP0Oryqveibd_01aiuBu-B0fRPQ0yF/view?usp=drive_link">Exercise 5B</a></li>
+            <li><a href="https://drive.google.com/file/d/1BIEKhwov9DUkWUhz4lI0RVwp7HalmoZS/view?usp=drive_link">Exercise 5C</a></li>
+            <li><a href="https://drive.google.com/file/d/1JiKbnSirDcMHA5hz3A8zbSeR7wLDilwH/view?usp=drive_link">Exercise 5D</a></li>
+            <li><a href="https://drive.google.com/file/d/1wZpAvqnl5I9MNuMoNjrMlsiU6p2jsTBR/view?usp=drive_link">Exercise 5E</a></li>
+            <li><a href="https://drive.google.com/file/d/1xiVxDSbFfkAy0i1dpoQTsd-QGeahoRNM/view?usp=drive_link">Exercise 6A</a></li>
+            <li><a href="https://drive.google.com/file/d/1bsysO2QmXVAB7kJW0LRfVVieQqjhr8O7/view?usp=drive_link">Exercise 6A(1)</a></li>
+            <li><a href="https://drive.google.com/file/d/1_zFBWlmpz-c9c9FvwKAiGiSRoXmUBG8h/view?usp=drive_link">Exercise 6B</a></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
